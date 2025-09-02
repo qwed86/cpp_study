@@ -12,5 +12,8 @@ int main()
     result2 = c==d;
     cout<<result1<<endl ;
     cout<<result2<<endl ;
-    
+    cout<<(a==b)<<endl;    //cout 中关系表达式需要加括号
+    //关系表达式也用于字符串：==和!=两种
+    string str1="爱莉希雅", str2="芽衣";
+    cout<<(str1==str2);
 }
