@@ -7,6 +7,7 @@ using namespace std;        // 指定缺省的命名空间。
 // 在函数定义的代码中，修改形参的值，会不会影响实参？ 答：不会影响实参的值
 
 void func1(int no, string str);
+
 int main()
 {
    int num=3;

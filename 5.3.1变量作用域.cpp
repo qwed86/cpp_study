@@ -11,7 +11,6 @@ int main()
   func2();
   func2();
   func2();
-  
 }
 
 

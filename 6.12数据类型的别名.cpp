@@ -22,5 +22,4 @@ int main()
 	typedef int             int32_t;    // 32位的整数。
 	typedef long          int64_t;    // 64位的整数。
     // 在程序源代码中，只使用别名int16_t、int32_t、int64_t，不使用原名。写在头文件里
-    
 }
