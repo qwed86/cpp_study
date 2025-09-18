@@ -15,8 +15,8 @@ int main()
     int  a=89;
 	char b='X';
 	
-	cout << "a的地址是：" <<  & a << endl;
-	cout << "b的地址是：" <<  & b << endl;
+	cout << "a的地址是：" << & a << endl;
+	cout << "b的地址是：" << & b << endl;
 
 	func("a", &a);
 	func("b", &b);

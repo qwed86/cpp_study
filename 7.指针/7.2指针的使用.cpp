@@ -4,8 +4,8 @@ using namespace std;
 int main()
 {
     // 若指针未初始化，指针变量中存放的是一个随机值
-    int a= 3;
-    int * p =&a;
+    int a = 3;
+    int *p =&a;
     int *p1 = &a ; // 多个指针可以指向同一个变量
     cout<<"变量a的值为："<<a<<endl ;
     cout<<"*p="<<*p<<endl; // 指针解引用，通过指针变量访问a的值
