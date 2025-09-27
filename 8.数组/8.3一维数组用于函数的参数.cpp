@@ -1,6 +1,6 @@
 # include<iostream>
 using namespace std;
-//一维数组用于函数的参数时，只能传数组的地址，并且必须把数组长度也传进去
+//一维数组用于函数的参数时，只能传数组的地址，并且必须把数组长度也传进去除非数组中有最后一个元素的标志。
 // void func(int arr[], int len);
 void func(int arr[], int len)
 {
