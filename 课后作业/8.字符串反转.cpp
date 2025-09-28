@@ -26,8 +26,8 @@ void inverse1(char *arr, int len) // 思路二：直接交换字符串头尾数�
     for (int i = 0; i < len / 2; i++)
     {
         char a;
-        a = arr[len-i-1];
-        arr[len-i-1] = arr[i];
+        a = arr[len - i - 1];
+        arr[len - i - 1] = arr[i];
         arr[i] = a;
     }
 }
@@ -47,6 +47,6 @@ int main()
     }
     // inverse(str, len);
     inverse1(str, len);
-    //cout << "arr=" << arr << endl;
+    // cout << "arr=" << arr << endl;
     cout << "str=" << str;
 }
