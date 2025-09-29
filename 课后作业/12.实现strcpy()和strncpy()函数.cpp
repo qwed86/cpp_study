@@ -26,27 +26,27 @@ char *mystrcpy1(char *dest, const char *src)
 // 如果参数dest所指的内存空间不够大，会导致数组的越界。
 char *mystrncpy(char *dest, const char *src, const size_t n)
 {
-    for (int i = 0; i < n; i++)
+    size_t i = 0;
+    for (; i < n && src[i] != '\0'; i++)
     {
-        if (src[i] == 0)
-        {
-            for (int j = i; j < n; j++)
-                dest[i] = 0;
-        }
-        else
-        {
-            dest[i] = src[i];
-        }
+        dest[i] = src[i];   // 正常拷贝
+    }
+    dest[n]=0;
+    // 如果 src 提前结束，剩下的补 0
+    for (; i < n; i++)
+    {
+        dest[i] = '\0';
     }
     return dest;
 }
 
+
 int main()
 {
-    char str[10] = "hello", arr[10] = {0};
+    char str[100] = "hello", arr[100] ;
     // cout<<arr<<endl;
     // mystrcpy1(arr, str);
-    mystrncpy(arr, str, 9);
+    mystrncpy(arr, "111111111111111", 3);
     cout << arr << endl;
-    cout<<sizeof(arr)<<endl;
+   
 }
