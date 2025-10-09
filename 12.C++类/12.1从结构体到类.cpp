@@ -14,20 +14,21 @@ public: // 类的访问权限
     string memo;    // 备注。
 
     // 结构体成员函数可以直接访问成员变量，无需传参
-    void show() // 不需要修改实参的值且实参是较大的结构，则使用const指针或const引用。
-    {
-        cout << "姓名：" << name << "，年龄：" << age << endl;
-    }
     void setvalue(string name1, int age1)
     {
         name = name1;
         age = age1;
     }
+    void show() // 不需要修改实参的值且实参是较大的结构，则使用const指针或const引用。
+    {
+        cout << "姓名：" << name << "，年龄：" << age << endl;
+    }
+    
 };
 
 int main()
 {
-    Girl girl;
+    Girl girl; //用类创建一个/实例化一个对象girl
     girl.setvalue("西施", 26);
     girl.show();
 }
