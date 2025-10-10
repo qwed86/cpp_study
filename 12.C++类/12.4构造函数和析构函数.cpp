@@ -11,14 +11,16 @@ using namespace std; // 指定缺省的命名空间。
 */
 class CGirl // 超女类CGirl。
 {
-public:
+public: //构造函数与析构函数访问权限必须是public
     string name;                          // 姓名
     int age;                              // 年龄。
     CGirl() //构造函数名必须与类名相同
     {name.clear(); name="西施"; age=20;
     cout<<"调用了CGirl构造函数"<<endl;}
-    ~CGirl()
+
+    ~CGirl() //析构函数
     {cout<<"调用了析构函数"<<endl;}
+
     enum {girl=1, boy=2};
     void setvalue(string name1, int age1) // 设置成员变量的值。
     {name = name1;age = age1;}
