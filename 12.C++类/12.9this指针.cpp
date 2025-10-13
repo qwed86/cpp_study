@@ -20,9 +20,10 @@ public:
     {
         cout << "我是：" << m_name << ",最漂亮超女。" << endl;
     }
-    const CGirl& pk(const CGirl& g) const
+    const CGirl &pk(const CGirl &g) const
     {
-        if (g.m_yz < m_yz) return g;
+        if (g.m_yz < m_yz)
+            return g;
         return* this;
     }
 };
@@ -34,13 +35,12 @@ public:
 //     return g2;
 // }
 
-//this指针存放了对象的地址，它被作为隐藏参数传递给了成员函数，
-//指向调用成员函数的对象（谁调用了成员函数指向谁）。
+// this指针存放了对象的地址，它被作为隐藏参数传递给了成员函数，
+// 指向调用成员函数的对象（谁调用了成员函数指向谁）。
 int main()
 {
     CGirl g1("西施", 4), g2("西瓜", 3), g3("东施", 2);
     // const CGirl& g = g2.pk(g1).pk(g3); //this指向g2
     // g.show();
     g2.pk(g1).pk(g3).show();
-    
 }
